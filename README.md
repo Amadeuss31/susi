@@ -24,7 +24,7 @@ It is easy to integrate SUSI&#39;s API with Line bot and you will need to have a
 ### 1- Line Account on your mobile app:
 
 If you have Line account then move to next step else sign up for an account and make
-<img src="/Assets/Sign_up.png" width="100">
+ one. <img src="/Assets/Sign_up.png" width="200">
 ### 2- Create a LINE@ account with enabled Messaging API:
 
 - In the [Line Business Center](https://business.line.me/en/), select Messaging API under the [Service](https://business.line.me/en/services/bot/) category at the top of the page.
@@ -77,4 +77,4 @@ After making app copy this link and paste it in webhook url in Line channel cons
 
 ### SUSI AI BOT Set:
 
-<img src="/Assets/SUSI_Chat.PNG" width="100">
+<img src="/Assets/SUSI_Chat.PNG" width="200">

@@ -24,7 +24,7 @@ To integrate SUSI&#39;s API with Line bot and you will need to have a line accou
 ## 1- Login/Sign up:
 
 If you have Line account then move to next step else sign up for an account and make
- one. <img src="/docs/images/Sign_up.png" width="250">
+ one. <img src="/docs/images/Sign_up.PNG" width="250">
  
 ## 2- Create a LINE@ account with enabled Messaging API:
 

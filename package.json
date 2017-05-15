@@ -1,6 +1,6 @@
 {
   "name": "SUSI-Bot",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "SUSI AI LINE bot",
   "main": "index.js",
   "dependencies": {

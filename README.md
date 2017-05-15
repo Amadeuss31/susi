@@ -1,6 +1,6 @@
 # Getting Started With Line SUSI AI Bot:
 
-To add SUSI AI LINE Bot as your friend scan this qr code with Line app.
+If you want to add SUSI Line bot as a friend Scan this QR Code and if you want to integrate follow steps given below 
 
  <img src="/Assets/Barcode.PNG" width="370">  
 

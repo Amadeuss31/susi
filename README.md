@@ -1,18 +1,19 @@
 # Getting Started With Line SUSI AI Bot:
 
+## Pre-requisites:
+
+   - Line app
+   - Github
+   - Heroku
+
 To add SUSI AI LINE Bot as your friend scan this qr code with Line app.
 
  <img src="/Assets/Barcode.PNG" width="370">  
 
 It is easy to integrate SUSI&#39;s API with Line bot and you will need to have a line account first so that you can follow below procedure. You can download it from [LINE APP](https://play.google.com/store/apps/details?id=jp.naver.line.android&amp;hl=en).
 
-### Pre-requisites:
 
-- Line app
-- Github
-- Heroku
-
-### Steps:
+## Steps:
 
 1. Line Account on your mobile app
 2. Create a LINE@ account with enabled Messaging API on [Line Business Center](https://business.line.me/en/)
@@ -20,11 +21,12 @@ It is easy to integrate SUSI&#39;s API with Line bot and you will need to have a
 4. Develop your bot
 5. Deploy your bot
 
-### 1- Line Account on your mobile app:
+## 1- Login/Sign up:
 
 If you have Line account then move to next step else sign up for an account and make
  one. <img src="/Assets/Sign_up.png" width="250">
-### 2- Create a LINE@ account with enabled Messaging API:
+ 
+## 2- Create a LINE@ account with enabled Messaging API:
 
 - In the [Line Business Center](https://business.line.me/en/), select Messaging API under the [Service](https://business.line.me/en/services/bot/) category at the top of the page.
 - Select either Start using Messaging API.
@@ -33,7 +35,8 @@ If you have Line account then move to next step else sign up for an account and 
 - Go to the settings and then  Bot Settings page of the LINE@ Manager then click Enable API.
 
 ![LINE_LOGIN](/Assets/Line_Business_Center_Login.PNG)
-### 3- Configure your bot:
+
+## 3- Configure your bot:
 
 - In the LINE@ Manager, go to the [Bot Settings](https://admin-official.line.me/8279988/bot-api/setting) page, which can be found under &quot;Settings&quot; on the side menu.
 - To reply to messages using webhooks, select Allow for &quot;Use webhooks&quot; under &quot;Request Settings&quot;
@@ -51,11 +54,11 @@ Go to Accounts option at top of page and open LINE Developers from there
 ![CHANNEL_CONSOLE](/Assets/Channel_Console.PNG)
 After following these steps your account is ready and you are good to go to develop your bot.
 
-**4- Develop your bot:**
+## 4- Develop your bot:
 
 You can develop your own bot or you can fork this repository and deploy it to heroku.
 
-**5- Deploy your bot:**
+## 5- Deploy your bot:
 
 To deploy your bot to heroku you need an account on [Heroku](https://www.heroku.com/) and after making an account make an app
 
@@ -74,6 +77,6 @@ After making app copy this link and paste it in webhook url in Line channel cons
 
 ![WEBHOOK_URL](/Assets/WebHook_Url.PNG)
 
-### SUSI AI BOT Set:
+## SUSI AI BOT:
 
 <img src="/Assets/SUSI_Chat.PNG" width="250">

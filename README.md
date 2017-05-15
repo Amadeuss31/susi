@@ -1,21 +1,21 @@
 # Getting Started With Line SUSI AI Bot:
 
+To add SUSI AI LINE Bot as your friend scan this qr code with Line app.
+
+ <img src="/Assets/Barcode.PNG" width="370">  
+
+To integrate SUSI&#39;s API with Line bot and you will need to have a line account first so that you can follow below procedure. You can download it from [LINE APP](https://play.google.com/store/apps/details?id=jp.naver.line.android&amp;hl=en).
+
 ## Pre-requisites:
 
    - Line app
    - Github
    - Heroku
 
-To add SUSI AI LINE Bot as your friend scan this qr code with Line app.
-
- <img src="/Assets/Barcode.PNG" width="370">  
-
-It is easy to integrate SUSI&#39;s API with Line bot and you will need to have a line account first so that you can follow below procedure. You can download it from [LINE APP](https://play.google.com/store/apps/details?id=jp.naver.line.android&amp;hl=en).
-
 
 ## Steps:
 
-1. Line Account on your mobile app
+1. Login/Sign up
 2. Create a LINE@ account with enabled Messaging API on [Line Business Center](https://business.line.me/en/)
 3. Configure your bot
 4. Develop your bot

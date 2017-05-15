@@ -6,8 +6,8 @@ var request = require("request");
 
 // create LINE SDK config from env variables
 const config = {
-  channelAccessToken: 'hYLoXRWvzVUNc5DtZSRWEhjRKaT2EmOc/d4f1VcowrBddxl2IY1TkHOZn/QHJLxNZEK4nQRrwLlsiKg2f6roBbMDk/4WB4WSqEymrmSwv01oXhgtiZmUXMyGlqXSW0yDdsfUKRWStKUgNdn//a7SYgdB04t89/1O/w1cDnyilFU=',
-  channelSecret: '63ab12be6cb1f0c8fc3dafd42455e2fd'
+    channelAccessToken: 'hYLoXRWvzVUNc5DtZSRWEhjRKaT2EmOc/d4f1VcowrBddxl2IY1TkHOZn/QHJLxNZEK4nQRrwLlsiKg2f6roBbMDk/4WB4WSqEymrmSwv01oXhgtiZmUXMyGlqXSW0yDdsfUKRWStKUgNdn//a7SYgdB04t89/1O/w1cDnyilFU=',
+    channelSecret: '63ab12be6cb1f0c8fc3dafd42455e2fd'
 };
 
 // create LINE SDK client
@@ -20,36 +20,42 @@ const app = express();
 // register a webhook handler with middleware
 // about the middleware, please refer to doc
 app.post('/webhook', line.middleware(config), (req, res) => {
-  Promise
-    .all(req.body.events.map(handleEvent))
-    .then((result) => res.json(result));
+    Promise
+        .all(req.body.events.map(handleEvent))
+        .then((result) => res.json(result));
 });
 
 // event handler
 function handleEvent(event) {
-  if (event.type !== 'message' || event.message.type !== 'text') {
-    // ignore non-text-message event
-    return Promise.resolve(null);
-  }
-  
-  var options1 = { 
-					method: 'GET',
-					url: 'http://api.asksusi.com/susi/chat.json',
-					qs: { timezoneOffset: '-330', q: event.message.text }
-				};
-				
-				request(options1, function (error1, response1, body1) {
-  			if (error1) throw new Error(error1);
-  			// answer fetched from susi
-			//console.log(body1);
-			var ans = (JSON.parse(body1)).answers[0].actions[0].expression; 
-			  // create a echoing text message
-  const answer = { type: 'text', text:ans  };
+    if (event.type !== 'message' || event.message.type !== 'text') {
+        // ignore non-text-message event
+        return Promise.resolve(null);
+    }
 
-  // use reply API
-  return client.replyMessage(event.replyToken, answer);
-			
-			})
+    var options1 = {
+        method: 'GET',
+        url: 'http://api.asksusi.com/susi/chat.json',
+        qs: {
+            timezoneOffset: '-330',
+            q: event.message.text
+        }
+    };
+
+    request(options1, function(error1, response1, body1) {
+        if (error1) throw new Error(error1);
+        // answer fetched from susi
+        //console.log(body1);
+        var ans = (JSON.parse(body1)).answers[0].actions[0].expression;
+        // create a echoing text message
+        const answer = {
+            type: 'text',
+            text: ans
+        };
+
+        // use reply API
+        return client.replyMessage(event.replyToken, answer);
+
+    })
 
 
 }
@@ -57,5 +63,5 @@ function handleEvent(event) {
 // listen on port
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`listening on ${port}`);
+    console.log(`listening on ${port}`);
 });

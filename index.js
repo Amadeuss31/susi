@@ -12,7 +12,7 @@ const config = {
 };
 
 setInterval(function() {
-		http.get('https://susi-slackbot.herokuapp.com/');
+		http.get('https://susi-linebot.herokuapp.com/');
 	}, 1200000);
 
 

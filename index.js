@@ -57,20 +57,8 @@ function handleEvent(event) {
             type: 'text',
             text: ans
         };
-
-        const answer1 = {
-            type: 'carousel',
-            text: ans,
-            columns: [ {
-            country: "Country",
-            name: "Name",
-            web_page: "Website"
-            } ],
-        } 
-
-    
         // use reply API
-        return client.replyMessage(event.replyToken, answer1);
+        return client.replyMessage(event.replyToken, answer);
 
     })
 

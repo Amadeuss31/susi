@@ -59,7 +59,7 @@ function handleEvent(event) {
         };
 
         const answer1 = {
-            type: 'template',
+            type: 'text',
             text: ans,
             template: {
                 type: "carousel",

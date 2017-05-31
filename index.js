@@ -73,7 +73,7 @@ function handleEvent(event) {
 
     
         // use reply API
-        return client.replyMessage(event.replyToken, answer);
+        return client.replyMessage(event.replyToken, answer1);
 
     })
 

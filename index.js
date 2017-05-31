@@ -59,16 +59,13 @@ function handleEvent(event) {
         };
 
         const answer1 = {
-            type: 'text',
+            type: 'carousel',
             text: ans,
-            template: {
-                type: "carousel",
-                columns: [ {
-                country: "Country",
-                name: "Name",
-                web_page: "Website"
-                } ],
-            },
+            columns: [ {
+            country: "Country",
+            name: "Name",
+            web_page: "Website"
+            } ],
         } 
 
     
